@@ -4,9 +4,9 @@ import { focus } from '../data'
 export default function Focus() {
   return (
     <Section id="focus" title="What I Work On">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="flex flex-wrap justify-center gap-6">
         {focus.map((f) => (
-          <div key={f.title} className="card card-hover p-8 text-center">
+          <div key={f.title} className="card card-hover p-8 text-center w-full sm:w-[48%] lg:w-[32%]">
             <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-mint/20 to-violet/20">
               <i className={`${f.icon} text-2xl text-mint`} />
             </div>

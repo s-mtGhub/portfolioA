@@ -10,10 +10,16 @@ export default function Footer() {
             .map((s) => (
               <a
                 key={s.label}
-                href={s.href}
+                href={s.href.startsWith('mailto:') ? '#' : s.href}
                 aria-label={s.label}
-                target="_blank"
-                rel="noreferrer"
+                onClick={(e) => {
+                  if (s.href.startsWith('mailto:')) {
+                    e.preventDefault()
+                    window.open(s.href)
+                  }
+                }}
+                target={s.href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={s.href.startsWith('mailto:') ? undefined : 'noreferrer'}
                 className="grid h-11 w-11 place-items-center rounded-full border border-line text-lg text-muted transition-colors hover:border-mint hover:text-mint"
               >
                 <i className={s.icon} />

@@ -1,6 +1,8 @@
 import Starfield from './components/Starfield'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import CursorStar from './components/CursorStarV2'
+// import CursorStar from './components/CursorStar'
 import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
@@ -10,8 +12,12 @@ import Achievements from './components/Achievements'
 import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import usePrefetchPreviews from './hooks/usePrefetchPreviews'
+import { hero, certifications } from './data'
 
 export default function App() {
+  // warm Drive preview URLs in background (idle time)
+  usePrefetchPreviews([hero.secondaryCta.href, ...certifications.map((c) => c.href)])
   return (
     <>
       {/* three fixed layers behind the page: shifting gradient, neon glows, stars */}
@@ -28,17 +34,18 @@ export default function App() {
         }}
       />
       <Starfield />
+      <CursorStar />
 
       <Navbar />
       <main>
         <Hero />
         <About />
         <Experience />
-        <Skills />
-        <Focus />
         <Portfolio />
-        <Achievements />
+        <Skills />
         <Certifications />
+        <Focus />
+        <Achievements />
         <Contact />
       </main>
       <Footer />

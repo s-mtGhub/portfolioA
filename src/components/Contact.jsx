@@ -19,7 +19,9 @@ export default function Contact() {
     e.preventDefault()
     const subject = encodeURIComponent(`Portfolio enquiry from ${form.name}`)
     const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`)
-    window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`
+    // Use window.open for mailto so the SPA page isn't replaced by a mailto URL
+    const mailto = `mailto:${contact.email}?subject=${subject}&body=${body}`
+    window.open(mailto)
   }
 
   const set = (key) => (e) => setForm({ ...form, [key]: e.target.value })

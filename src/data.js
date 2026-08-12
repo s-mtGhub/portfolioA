@@ -9,11 +9,11 @@ export const nav = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'focus', label: 'Focus' },
   { id: 'projects', label: 'Projects' },
-  { id: 'achievements', label: 'Achievements' },
+  { id: 'skills', label: 'Skills' },
   { id: 'certifications', label: 'Certifications' },
+  { id: 'focus', label: 'Focus' },
+  { id: 'achievements', label: 'Achievements' },
   { id: 'contact', label: 'Contact' },
 ]
 
@@ -25,19 +25,19 @@ export const socials = [
     href: 'https://www.linkedin.com/in/sumit-patel-9111bb203/',
   },
   { icon: 'fa-solid fa-envelope', label: 'Email', href: 'mailto:patelsumit.1652002@gmail.com' },
-  { icon: 'fa-solid fa-code', label: 'LeetCode', href: '#' }, // add your profile URL
-  { icon: 'fa-solid fa-trophy', label: 'Codeforces', href: '#' }, // add your profile URL
+  { icon: 'fa-solid fa-code', label: 'LeetCode', href: 'https://leetcode.com/u/s_mtLC/' }, // add your profile URL
+  { icon: 'fa-solid fa-trophy', label: 'Codeforces', href: 'https://codeforces.com/profile/__rider' }, // add your profile URL
 ]
 
 export const hero = {
   brand: 'Sumit',
   greeting: "Hi, I'm",
   name: 'Sumit Patel',
-  roles: ['Software Development Engineer @ Meesho', 'Backend & Distributed Systems', 'IIT Kharagpur'],
+  roles: ['Immediate Joiner', 'Ex-SDE @ Meesho', 'Backend & Distributed Systems', 'IIT Kharagpur'],
   tagline:
     'I build real-time backend systems that stay fast under load — low-latency gRPC pipelines, event-driven services and personalization infrastructure serving millions of users.',
   primaryCta: { label: 'View My Work', href: '#projects' },
-  secondaryCta: { label: 'Download CV', href: '/sumit-patel-cv.pdf' },
+  secondaryCta: { label: 'Download CV', href: 'https://drive.google.com/file/d/1YqRylArLR6gaEdlCMwrMYgmgENQHuDFl/preview', target: '_blank' },
 }
 
 export const about = {
@@ -50,7 +50,7 @@ export const about = {
     { value: 8.29, suffix: '', label: 'CGPA · IIT Kharagpur' },
     { value: 2189, suffix: '', label: 'LeetCode Max Rating' },
     { value: 1671, suffix: '', label: 'Codeforces Max Rating' },
-    { value: 6.2, suffix: 'ms', label: 'p99 Latency Shipped' },
+    { value: 2005, suffix: '', label: 'CodeChef Max Rating' },
   ],
 }
 
@@ -96,31 +96,31 @@ export const skillGroups = [
   {
     title: 'Languages',
     skills: [
-      { name: 'C / C++', level: 95 },
-      { name: 'Java', level: 90 },
-      { name: 'Go', level: 82 },
-      { name: 'Python', level: 85 },
-      { name: 'JavaScript', level: 78 },
+      { name: 'C / C++', level: 92 },
+      { name: 'Java', level: 85 },
+      { name: 'Go', level: 80 },
+      { name: 'Python', level: 75 },
+      { name: 'JavaScript', level: 80 },
     ],
   },
   {
     title: 'Backend & APIs',
     skills: [
-      { name: 'Spring Boot', level: 92 },
-      { name: 'gRPC / Protobuf', level: 90 },
+      { name: 'Spring Boot', level: 80 },
+      { name: 'gRPC / Protobuf', level: 75 },
       { name: 'REST APIs', level: 90 },
-      { name: 'Kafka', level: 85 },
-      { name: 'Node.js', level: 80 },
+      { name: 'Kafka', level: 75 },
+      { name: 'Node.js', level: 85 },
     ],
   },
   {
     title: 'Data & Caching',
     skills: [
-      { name: 'MySQL', level: 88 },
-      { name: 'MongoDB', level: 85 },
-      { name: 'ScyllaDB', level: 85 },
-      { name: 'Redis', level: 88 },
-      { name: 'DragonflyDB', level: 78 },
+      { name: 'MySQL', level: 78 },
+      { name: 'MongoDB', level: 78 },
+      { name: 'ScyllaDB', level: 75 },
+      { name: 'Redis', level: 85 },
+      { name: 'DragonflyDB', level: 80 },
     ],
   },
 ]
@@ -178,8 +178,8 @@ export const projects = [
     tagline: 'Personal Project',
     text: 'Full-stack e-commerce app on Node.js, Express and MongoDB with JWT-based secure session management, plus separate React/Redux admin and customer interfaces.',
     tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
-    live: '#',
-    code: '#',
+    live: { href: '#', target: '_blank' },
+    code: { href: 'https://github.com/MERN-Stack-E-Commerce-Project', target: '_blank' },
   },
   {
     emoji: '🌳',
@@ -187,15 +187,16 @@ export const projects = [
     tagline: 'Personal Project',
     text: 'C++/OpenGL quadtree visualizer for real-time interactive rendering and updates, built to explore large-scale spatial data management and GIS applications.',
     tags: ['C++', 'OpenGL', 'Spatial Data'],
-    live: '#',
-    code: '#',
+    live: { href: '#', target: '_blank' },
+    code: { href: 'https://github.com/s-mtGhub/Quad-Tree-Visualizer', target: '_blank' },
   },
   {
-    emoji: '🔗',
-    title: 'mini-url',
-    tagline: 'Meesho · In-house',
-    text: "Co-owner of Meesho's in-house URL shortening service, used across internal and customer-facing surfaces.",
+    emoji: '🤖',
+    title: 'Telegram Bot: Git Commit Tracker',
+    tagline: 'Personal Project',
+    text: "Telegram bot that tracks new commits to a GitHub repository and sends notifications to a Telegram channel, built with C++ real-time updates.",
     tags: ['Java', 'Spring Boot', 'Redis'],
+    code: { href: 'https://github.com/s-mtGhub/TelegramBot-gitNewCommitTracker', target: '_blank' },
   },
 ]
 
@@ -226,7 +227,7 @@ export const achievements = [
   },
   {
     icon: 'fa-solid fa-arrow-trend-up',
-    year: 'Impact',
+    year: 'Impact @ Meesho',
     title: '+2.5% 1ODNR',
     text: 'Personalization experiments improving first-session feed relevance.',
   },
@@ -240,31 +241,74 @@ export const achievements = [
 
 export const certifications = [
   {
-    emoji: '🔐',
-    issuer: 'Google Developer Group · Devtown',
-    title: 'Server Authentication',
-    text: 'Server-side authentication implemented with MongoDB, Express and Node.js.',
-    href: '#',
+    emoji: '🌱',
+    issuer: 'Coursera / Self-paced',
+    title: 'Spring Boot Course Completion',
+    text: 'Spring Boot course completion certificate.',
+    href: 'https://drive.google.com/file/d/1jyEg-jExVkCYOngi303L9uboM8O5Ywc4/preview',
+  },
+  {
+    emoji: '🔁',
+    issuer: 'Online Course',
+    title: 'Apache Kafka Course Completion',
+    text: 'Apache Kafka course completion certificate.',
+    href: 'https://drive.google.com/file/d/1DuRty-DmhEgcJOTtLhggfs-7hlSzzchF/preview',
+  },
+  {
+    emoji: '🐬',
+    issuer: 'Online Course',
+    title: 'Introduction to SQL with MySQL',
+    text: 'Introduction to SQL with MySQL course completion certificate.',
+    href: 'https://drive.google.com/file/d/1YGzwMw31HNk0x8S38uvi2lhUQa8W6GzQ/preview',
+  },
+  {
+    emoji: '🟥',
+    issuer: 'Online Course',
+    title: 'Master in Redis',
+    text: 'Master in Redis course completion certificate.',
+    href: 'https://drive.google.com/file/d/1fAL7151bSQSOJgXTPFm8yXJ84AN9mMqn/preview',
+  },
+  {
+    emoji: '🛡️',
+    issuer: 'Microsoft Learn Student Ambassador',
+    title: 'Server Authentication (Microsoft Learn)',
+    text: 'Server-side authentication implementation certified by Microsoft Learn Student Ambassador.',
+    href: 'https://drive.google.com/file/d/1C9LYNhwrmDQ0aoCmrF3ue1nMutHKZpzQ/preview',
+  },
+  {
+    emoji: '🔑',
+    issuer: 'Google Developer Group',
+    title: 'Server Authentication (GDG)',
+    text: 'Server-side authentication implementation certified by Google Developer Group.',
+    href: 'https://drive.google.com/file/d/1Hl_ysFf18ebZpidxRislK_0daU3U-DJ2/preview',
+  },
+  {
+    emoji: '🧾',
+    issuer: 'Devtown',
+    title: 'Server Authentication (Devtown)',
+    text: 'Server-side authentication implementation certified by Devtown.',
+    href: 'https://drive.google.com/file/d/1k3ahe_iuqnNu98STzJBtuPPxQX9tnXsK/preview',
   },
   {
     emoji: '☁️',
-    issuer: 'GDG · Microsoft Learn Student Ambassador · ShapeAI',
+    issuer: 'Microsoft Learn Student Ambassador · ShapeAI',
     title: 'Cloud Computing with AWS',
     text: 'Cloud computing fundamentals and hands-on deployment on AWS.',
-    href: '#',
+    href: 'https://drive.google.com/file/d/1bRo42mEZE_HYbAJzHf1qR6fcOnxRo5KQ/preview',
   },
   {
-    emoji: '📈',
+    emoji: '📊',
     issuer: 'Google Developer Group',
     title: 'Data Science / ML',
     text: 'Machine learning project on real estate price prediction.',
-    href: '#',
+    href: 'https://drive.google.com/file/d/1BSv2sxh-fQG_4dmJRudHXfRzACglcwXG/preview',
   },
+  
 ]
 
 export const contact = {
   email: 'patelsumit.1652002@gmail.com',
-  phone: '+91 70007 14921',
+  phone: '+91 9679203447',
   location: 'Bangalore, India',
 }
 
