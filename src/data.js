@@ -52,7 +52,7 @@ export const hero = {
   name: "Sumit Patel",
   roles: [
     "Immediate Joiner",
-    "Ex-SDE @ Meesho",
+    "SDE @ Meesho",
     "Backend & Distributed Systems",
     "IIT Kharagpur",
   ],
