@@ -342,7 +342,7 @@ export const certifications = [
 
 export const contact = {
   email: "patelsumit.1652002@gmail.com",
-  phone: "+91 9679203447",
+  phone: "+91 70007-14921",
   location: "Bangalore, India",
 };
 
